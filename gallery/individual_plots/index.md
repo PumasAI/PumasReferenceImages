@@ -1,0 +1,34 @@
+## Individual plots
+
+```@raw html
+<pre class='hljl'>
+<span class='hljl-nf'>include</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;model.jl&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
+ </span><span class='hljl-n'>df</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>DataFrame</span><span class='hljl-p'>(</span><span class='hljl-nf'>inspect</span><span class='hljl-p'>(</span><span class='hljl-n'>res</span><span class='hljl-p'>))</span><span class='hljl-t'>
+
+ </span><span class='hljl-cs'># you will want to plot - more than that will look bad, and run into some</span><span class='hljl-t'>
+ </span><span class='hljl-cs'># corner cases as well.</span><span class='hljl-t'>
+ </span><span class='hljl-nf'>plot_grouped</span><span class='hljl-p'>(</span><span class='hljl-nf'>groupby</span><span class='hljl-p'>(</span><span class='hljl-n'>df</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:id</span><span class='hljl-p'>)[</span><span class='hljl-ni'>1</span><span class='hljl-oB'>:</span><span class='hljl-ni'>6</span><span class='hljl-p'>])</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>subdf</span><span class='hljl-t'>
+     </span><span class='hljl-nf'>plot</span><span class='hljl-p'>(</span><span class='hljl-n'>subdf</span><span class='hljl-oB'>.</span><span class='hljl-n'>time</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-n'>subdf</span><span class='hljl-oB'>.</span><span class='hljl-n'>dv_wres</span><span class='hljl-t'> </span><span class='hljl-n'>subdf</span><span class='hljl-oB'>.</span><span class='hljl-n'>dv_ipred</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-k'>end</span><span class='hljl-t'>
+
+</span>
+</pre>
+
+```
+```@raw html
+
+<div style="display:inline-block">
+    <p style="display:inline-block; text-align: center">
+        <img src="http://pumas.ai/PumasReferenceImages/individual_plots/media/image.png" alt="">
+
+    </p>
+</div>
+
+<div style="display:inline-block">
+    <p style="display:inline-block; text-align: center">
+        <img src="http://pumas.ai/PumasReferenceImages/individual_plots/media/image.svg" alt="">
+
+    </p>
+</div>
+
+```

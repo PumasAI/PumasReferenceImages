@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.0/shuffle.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://rawgit.com/Vestride/Shuffle/master/docs/css/prism.css">
+<link rel="stylesheet" href="https://rawgit.com/Vestride/Shuffle/master/docs/css/normalize.css">
+<link rel="stylesheet" href="https://rawgit.com/Vestride/Shuffle/master/docs/css/style.css">
+<link rel="stylesheet" href="https://rawgit.com/Vestride/Shuffle/master/docs/css/shuffle-styles.css">
+  <div class="container">
+    <div class="row">
+      <div class="col-12@sm">
+        <h2>Example<a href="#demo"></a></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4@sm col-3@md">
+        <div class="filters-group">
+          <label for="filters-search-input" class="filter-label">Search</label>
+          <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12@sm filters-group-wrap">
+        <div class="filters-group">
+          <p class="filter-label">Filter</p>
+          <div class="btn-group filter-options">
+            <button class="btn btn--primary" data-group="text">text</button>
+<button class="btn btn--primary" data-group="meshscatter">meshscatter</button>
+<button class="btn btn--primary" data-group="scatter">scatter</button>
+<button class="btn btn--primary" data-group="mesh">mesh</button>
+<button class="btn btn--primary" data-group="linesegments">linesegments</button>
+<button class="btn btn--primary" data-group="lines">lines</button>
+<button class="btn btn--primary" data-group="surface">surface</button>
+<button class="btn btn--primary" data-group="volume">volume</button>
+<button class="btn btn--primary" data-group="heatmap">heatmap</button>
+<button class="btn btn--primary" data-group="image">image</button>
+<button class="btn btn--primary" data-group="interaction">interaction</button>
+<button class="btn btn--primary" data-group="record">record</button>
+<button class="btn btn--primary" data-group="statsmakie">statsmakie</button>
+<button class="btn btn--primary" data-group="vbox">vbox</button>
+<button class="btn btn--primary" data-group="layout">layout</button>
+<button class="btn btn--primary" data-group="legend">legend</button>
+<button class="btn btn--primary" data-group="colorlegend">colorlegend</button>
+<button class="btn btn--primary" data-group="vectorfield">vectorfield</button>
+<button class="btn btn--primary" data-group="poly">poly</button>
+<button class="btn btn--primary" data-group="camera">camera</button>
+<button class="btn btn--primary" data-group="recipe">recipe</button>
+<button class="btn btn--primary" data-group="theme">theme</button>
+<button class="btn btn--primary" data-group="annotations">annotations</button>
+          </div>
+        </div>
+        <fieldset class="filters-group">
+          <legend class="filter-label">Sort</legend>
+          <div class="btn-group sort-options">
+            <label class="btn active">
+              <input type="radio" name="sort-value" value="dom"> Default
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="title"> Title
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="date-created"> Date Created
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="grid" class="row my-shuffle-container shuffle" style="height: 1220px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;">
+      <figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["convergence", "basics"]' data-date-created="2017-04-30" data-title="Convergence" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/convergence/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/convergence/index.html" target="_blank" rel="noopener">"Convergence"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["resplot", "basics"]' data-date-created="2017-04-30" data-title="Plain resplot" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/plain_resplot/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/plain_resplot/index.html" target="_blank" rel="noopener">"Plain resplot"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", "etacov"]' data-date-created="2017-04-30" data-title="Plain etacov" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/plain_etacov/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/plain_etacov/index.html" target="_blank" rel="noopener">"Plain etacov"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", "corrplot", "StatsPlots"]' data-date-created="2017-04-30" data-title="Correlation plot" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/correlation_plot/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/correlation_plot/index.html" target="_blank" rel="noopener">"Correlation plot"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", "etacov"]' data-date-created="2017-04-30" data-title="Etacov with kwargs" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/etacov_with_kwargs/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/etacov_with_kwargs/index.html" target="_blank" rel="noopener">"Etacov with kwargs"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", "individual"]' data-date-created="2017-04-30" data-title="CWRES vs IVAR" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/cwres_vs_ivar/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/cwres_vs_ivar/index.html" target="_blank" rel="noopener">"CWRES vs IVAR"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["grouped", "basics", "individual"]' data-date-created="2017-04-30" data-title="Grouped CWRES vs IVAR" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/grouped_cwres_vs_ivar/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/grouped_cwres_vs_ivar/index.html" target="_blank" rel="noopener">"Grouped CWRES vs IVAR"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", ""]' data-date-created="2017-04-30" data-title="DV vs IPRED" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/dv_vs_ipred/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/dv_vs_ipred/index.html" target="_blank" rel="noopener">"DV vs IPRED"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["grouped", "basics", "etacov"]' data-date-created="2017-04-30" data-title="Grouped etacov" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/grouped_etacov/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/grouped_etacov/index.html" target="_blank" rel="noopener">"Grouped etacov"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item shuffle-item shuffle-item--visible" data-groups='["basics", "individual"]' data-date-created="2017-04-30" data-title="Individual plots" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(525px, 1220px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="http://pumas.ai/PumasReferenceImages/individual_plots/media/thumb.jpg" alt="">
+
+        <img class="picture-item__blur" src="" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="http://pumas.ai/PumasReferenceImages/individual_plots/index.html" target="_blank" rel="noopener">"Individual plots"</a></figcaption>
+      <p class="picture-item__tags hidden@xs"></p>
+    </div>
+  </div>
+</figure>
+
+      <div class="col-1@sm col-1@xs my-sizer-element"></div>
+    </div>
+  </div>
+
+    <script>
+    'use strict';
+
+var Shuffle = window.Shuffle;
+
+var Demo = function (element) {
+  this.element = element;
+
+  this.shuffle = new Shuffle(element, {
+    itemSelector: '.picture-item',
+    sizer: element.querySelector('.my-sizer-element'),
+  });
+
+  // Log events.
+  this.addShuffleEventListeners();
+
+  this._activeFilters = [];
+
+  this.addFilterButtons();
+  this.addSorting();
+  this.addSearchFilter();
+
+  this.mode = 'exclusive';
+};
+
+Demo.prototype.toggleMode = function () {
+  if (this.mode === 'additive') {
+    this.mode = 'exclusive';
+  } else {
+    this.mode = 'additive';
+  }
+};
+
+/**
+ * Shuffle uses the CustomEvent constructor to dispatch events. You can listen
+ * for them like you normally would (with jQuery for example).
+ */
+Demo.prototype.addShuffleEventListeners = function () {
+  this.shuffle.on(Shuffle.EventType.LAYOUT, function (data) {
+    console.log('layout. data:', data);
+  });
+
+  this.shuffle.on(Shuffle.EventType.REMOVED, function (data) {
+    console.log('removed. data:', data);
+  });
+};
+
+Demo.prototype.addFilterButtons = function () {
+  var options = document.querySelector('.filter-options');
+
+  if (!options) {
+    return;
+  }
+
+  var filterButtons = Array.from(options.children);
+
+  filterButtons.forEach(function (button) {
+    button.addEventListener('click', this._handleFilterClick.bind(this), false);
+  }, this);
+};
+
+Demo.prototype._handleFilterClick = function (evt) {
+  var btn = evt.currentTarget;
+  var isActive = btn.classList.contains('active');
+  var btnGroup = btn.getAttribute('data-group');
+
+  // You don't need _both_ of these modes. This is only for the demo.
+
+  // For this custom 'additive' mode in the demo, clicking on filter buttons
+  // doesn't remove any other filters.
+  if (this.mode === 'additive') {
+    // If this button is already active, remove it from the list of filters.
+    if (isActive) {
+      this._activeFilters.splice(this._activeFilters.indexOf(btnGroup));
+    } else {
+      this._activeFilters.push(btnGroup);
+    }
+
+    btn.classList.toggle('active');
+
+    // Filter elements
+    this.shuffle.filter(this._activeFilters);
+
+  // 'exclusive' mode lets only one filter button be active at a time.
+  } else {
+    this._removeActiveClassFromChildren(btn.parentNode);
+
+    var filterGroup;
+    if (isActive) {
+      btn.classList.remove('active');
+      filterGroup = Shuffle.ALL_ITEMS;
+    } else {
+      btn.classList.add('active');
+      filterGroup = btnGroup;
+    }
+
+    this.shuffle.filter(filterGroup);
+  }
+};
+
+Demo.prototype._removeActiveClassFromChildren = function (parent) {
+  var children = parent.children;
+  for (var i = children.length - 1; i >= 0; i--) {
+    children[i].classList.remove('active');
+  }
+};
+
+Demo.prototype.addSorting = function () {
+  var buttonGroup = document.querySelector('.sort-options');
+
+  if (!buttonGroup) {
+    return;
+  }
+
+  buttonGroup.addEventListener('change', this._handleSortChange.bind(this));
+};
+
+Demo.prototype._handleSortChange = function (evt) {
+  // Add and remove `active` class from buttons.
+  var wrapper = evt.currentTarget;
+  var buttons = Array.from(evt.currentTarget.children);
+  buttons.forEach(function (button) {
+    if (button.querySelector('input').value === evt.target.value) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
+
+  // Create the sort options to give to Shuffle.
+  var value = evt.target.value;
+  var options = {};
+
+  function sortByDate(element) {
+    return element.getAttribute('data-created');
+  }
+
+  function sortByTitle(element) {
+    return element.getAttribute('data-title').toLowerCase();
+  }
+
+  if (value === 'date-created') {
+    options = {
+      reverse: true,
+      by: sortByDate,
+    };
+  } else if (value === 'title') {
+    options = {
+      by: sortByTitle,
+    };
+  }
+
+  this.shuffle.sort(options);
+};
+
+// Advanced filtering
+Demo.prototype.addSearchFilter = function () {
+  var searchInput = document.querySelector('.js-shuffle-search');
+
+  if (!searchInput) {
+    return;
+  }
+
+  searchInput.addEventListener('keyup', this._handleSearchKeyup.bind(this));
+};
+
+/**
+ * Filter the shuffle instance by items with a title that matches the search input.
+ * @param {Event} evt Event object.
+ */
+Demo.prototype._handleSearchKeyup = function (evt) {
+  var searchText = evt.target.value.toLowerCase();
+
+  this.shuffle.filter(function (element, shuffle) {
+
+    // If there is a current filter applied, ignore elements that don't match it.
+    if (shuffle.group !== Shuffle.ALL_ITEMS) {
+      // Get the item's groups.
+      var groups = JSON.parse(element.getAttribute('data-groups'));
+      var isElementInCurrentGroup = groups.indexOf(shuffle.group) !== -1;
+
+      // Only search elements in the current group
+      if (!isElementInCurrentGroup) {
+        return false;
+      }
+    }
+
+    var titleElement = element.querySelector('.picture-item__title');
+    var titleText = titleElement.textContent.toLowerCase().trim();
+
+    return titleText.indexOf(searchText) !== -1;
+  });
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  window.demo = new Demo(document.getElementById('grid'));
+});
+
+    </script>
+  </body>
+</html>
+

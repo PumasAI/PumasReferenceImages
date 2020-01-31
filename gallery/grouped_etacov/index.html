@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JuliaDocs/Documenter.jl/assets/html/documenter.css">
+    <link rel="stylesheet" href="../syntaxtheme.css">
+
+  </head>
+  <body>
+    Documenter.Utilities.DOM.Node[<h2>Grouped etacov</h2>, <pre class='hljl'>
+<span class='hljl-nf'>include</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;model.jl&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
+ </span><span class='hljl-nf'>plot_grouped</span><span class='hljl-p'>(</span><span class='hljl-nf'>groupby</span><span class='hljl-p'>(</span><span class='hljl-nf'>DataFrame</span><span class='hljl-p'>(</span><span class='hljl-nf'>inspect</span><span class='hljl-p'>(</span><span class='hljl-n'>res</span><span class='hljl-p'>)),</span><span class='hljl-t'> </span><span class='hljl-sc'>:id</span><span class='hljl-p'>))</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>subdf</span><span class='hljl-t'>
+     </span><span class='hljl-nf'>etacov</span><span class='hljl-p'>(</span><span class='hljl-n'>subdf</span><span class='hljl-p'>;</span><span class='hljl-t'> </span><span class='hljl-n'>cvs</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:isPM</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:wt</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>titles</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-kc'>false</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-k'>end</span><span class='hljl-t'>
+
+</span>
+</pre>
+, 
+<div style="display:inline-block">
+    <p style="display:inline-block; text-align: center">
+        <img src="http://pumas.ai/PumasReferenceImages/grouped_etacov/media/image.png" alt="">
+
+    </p>
+</div>
+
+<div style="display:inline-block">
+    <p style="display:inline-block; text-align: center">
+        <img src="http://pumas.ai/PumasReferenceImages/grouped_etacov/media/image.svg" alt="">
+
+    </p>
+</div>
+]
+  </body>
+</html>
+
