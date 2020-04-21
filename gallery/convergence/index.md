@@ -2,11 +2,11 @@
 
 ```@raw html
 <pre class='hljl'>
-<span class='hljl-nf'>include</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;model.jl&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
- </span><span class='hljl-s'>&quot;Here, `res` is a FittedPumasModel.&quot;</span><span class='hljl-t'>
+<span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>PumasPlots</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>LinearAlgebra</span><span class='hljl-t'>
 
- </span><span class='hljl-nf'>convergence</span><span class='hljl-p'>(</span><span class='hljl-n'>res</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-cs'># Some setup code has been omitted for clarity.</span><span class='hljl-t'>
 
+</span><span class='hljl-nf'>convergence</span><span class='hljl-p'>(</span><span class='hljl-n'>res</span><span class='hljl-p'>)</span><span class='hljl-t'>
 </span>
 </pre>
 
@@ -15,14 +15,7 @@
 
 <div style="display:inline-block">
     <p style="display:inline-block; text-align: center">
-        <img src="http://pumas.ai/PumasReferenceImages/convergence/media/image.png" alt="">
-
-    </p>
-</div>
-
-<div style="display:inline-block">
-    <p style="display:inline-block; text-align: center">
-        <img src="http://pumas.ai/PumasReferenceImages/convergence/media/image.svg" alt="">
+        <img src="http://juliaplots.org/MakieReferenceImages/gallery//convergence/media/image.svg" alt="">
 
     </p>
 </div>

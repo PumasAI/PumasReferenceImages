@@ -2,8 +2,12 @@
 
 ```@raw html
 <pre class='hljl'>
-<span class='hljl-nf'>include</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;model.jl&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
- </span><span class='hljl-nd'>@df</span><span class='hljl-t'> </span><span class='hljl-n'>res</span><span class='hljl-t'> </span><span class='hljl-nf'>plot</span><span class='hljl-p'>(</span><span class='hljl-sc'>:time</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:dv_wres</span><span class='hljl-p'>)</span><span class='hljl-t'>
+<span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>Pumas</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>PumasPlots</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>StatsPlots</span><span class='hljl-t'>
+</span><span class='hljl-nf'>include</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;model.jl&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+</span><span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>Pumas</span><span class='hljl-t'> </span><span class='hljl-n'>PumasPlots</span><span class='hljl-t'>
+
+</span><span class='hljl-nd'>@df</span><span class='hljl-t'> </span><span class='hljl-n'>res</span><span class='hljl-t'> </span><span class='hljl-nf'>scatter</span><span class='hljl-p'>(</span><span class='hljl-sc'>:time</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:dv_wres</span><span class='hljl-p'>)</span><span class='hljl-t'>
 
 </span>
 </pre>
@@ -13,14 +17,14 @@
 
 <div style="display:inline-block">
     <p style="display:inline-block; text-align: center">
-        <img src="http://pumas.ai/PumasReferenceImages/cwres_vs_ivar/media/image.png" alt="">
+        <img src="https://gallery.pumas.ai/cwres_vs_ivar/media/image.png" alt="">
 
     </p>
 </div>
 
 <div style="display:inline-block">
     <p style="display:inline-block; text-align: center">
-        <img src="http://pumas.ai/PumasReferenceImages/cwres_vs_ivar/media/image.svg" alt="">
+        <img src="https://gallery.pumas.ai/cwres_vs_ivar/media/image.svg" alt="">
 
     </p>
 </div>
